@@ -1,0 +1,88 @@
+.films-list {
+  margin-top: 40px;
+}
+
+.films-list__load {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  font-size: 30px;
+  transform: translate(-50%, -50%);
+  animation: load 1s;
+  animation-iteration-count: infinite;
+}
+
+.films-list__container {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.films-list__item {
+  margin-bottom: 30px;
+}
+
+.films-list__item-container {
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(5, "auto");
+  grid-template-rows: "auto";
+  grid-template-areas: "photo info rating duration description";
+  align-items: center;
+}
+
+.films-list__title {
+  font-size: 32px;
+  text-align: center;
+}
+
+.films-list__photo {
+  grid-area: photo;
+  width: 150px;
+  height: 225px;
+  margin-right: 20px;
+}
+
+.films-list__info {
+  grid-area: info;
+}
+
+.films-list__item-title {
+  font-size: 24px;
+}
+
+.films-list__genres {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  line-height: 24px;
+}
+
+.films-list__genres-item {
+  margin-left: 10px;
+}
+
+.films-list__rating {
+  grid-area: rating;
+}
+
+.films-list__duration {
+  grid-area: duration;
+}
+
+.films-list__description {
+  grid-area: description;
+  width: 500px;
+  padding-left: 20px;
+}
+
+.films-list__comments {
+  position: absolute;
+  width: 100px;
+  height: 30px;
+  bottom: 0;
+  right: 0;
+  cursor: pointer;
+}

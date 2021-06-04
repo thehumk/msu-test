@@ -1,0 +1,67 @@
+$desktop-width: 900px;
+
+body {
+  margin: 0 auto;
+  color: #1F1E25;
+  background-color: #fff;
+
+  @media (max-width: $desktop-width - 1) {
+    min-width: 320px;
+  }
+}
+
+a {
+  text-decoration: none;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  min-width: 380px;
+  margin: 0 auto;
+  padding: 0 30px;
+
+  @media (max-width: $desktop-width - 1) {
+    padding: 0 20px;
+  }
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app__main {
+  flex-grow: 1;
+}
+
+@keyframes load {
+  from{
+    transform: rotate(0);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+
+  12.5% {transform: rotate(45deg)}
+  25% {transform: rotate(90deg)}
+  50% {transform: rotate(180deg)}
+  75% {transform: rotate(270deg)}
+  87.5% {transform: rotate(315deg)}
+}

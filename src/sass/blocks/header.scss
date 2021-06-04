@@ -1,0 +1,27 @@
+.header {
+  background-color: #001031;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 60px;
+}
+
+.header__logo {
+  @media (max-width: $desktop-width - 1) {
+    width: 141px;
+    height: 26px;
+  }
+}
+
+.header__content {
+  font-size: 18px;
+  color: #fff;
+
+  @media (max-width: $desktop-width - 1) {
+    margin-left: 50px;
+    font-size: 16px;
+  }
+}

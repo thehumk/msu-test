@@ -1,0 +1,16 @@
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.pagination__link {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  text-align: center;
+  line-height: 28px;
+  color: #000;
+  border: 1px solid #000;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
